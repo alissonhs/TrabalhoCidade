@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apCidade" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.com.ab.controller.FormCidadeController">
+  <children>
+    <GridPane hgap="5.0" layoutX="51.0" layoutY="73.0" prefHeight="169.0" prefWidth="498.0" vgap="5.0">
+      <children>
+        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="96.0" prefWidth="100.0" text="Nome" textAlignment="CENTER" textOverrun="CLIP" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <font>
+            <Font size="16.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label alignment="CENTER_RIGHT" font="$x1" prefHeight="93.0" prefWidth="100.0" text="Estado" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <TextField id="txtestado" fx:id="txtEstado" editable="false" prefHeight="36.0" prefWidth="297.0" style="-fx-background-color:#eee;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField id="txtnome" fx:id="txtNome" prefHeight="36.0" prefWidth="398.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+        <Button fx:id="btnlookUp" mnemonicParsing="false" onAction="#buscarEstado" prefHeight="42.0" prefWidth="101.0" text="Listar Estado" GridPane.columnIndex="2" GridPane.rowIndex="1">
+          <GridPane.margin>
+            <Insets />
+          </GridPane.margin>
+        </Button>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="297.0" minWidth="10.0" prefWidth="297.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.0" minWidth="0.0" prefWidth="101.0" />
+      </columnConstraints>
+      <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+</AnchorPane>
